@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-site="siteName"></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- owl carousel 2 effects animation- -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+
+  <!-- Readex Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=PT+Sans+Caption:wght@400;700&family=Parisienne&family=Phetsarath:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Racing+Sans+One&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Fredoka -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=PT+Sans+Caption:wght@400;700&family=Parisienne&family=Phetsarath:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Racing+Sans+One&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bai Jamjuree -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Sarabun -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <!-- Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Onest:wght@100..900&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=PT+Sans+Caption:wght@400;700&family=Parisienne&family=Phetsarath:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Racing+Sans+One&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="icon" href="images/main-logo.png">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="pageloader">
+    <div class="loader-box">
+      <img src="images/dogloader.gif" alt="Loading..." class="loader-gif">
+    </div>
+  </div>
+
+  <!-- herader and hero -->
+  <div class="container-fluid secmaiherbg">
+
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="images/videocar.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- header -->
+    <div include-html="header.html" id="header-file" style="position: relative; z-index: 2;"></div>
+
+
+  </div>
+
+  <!-- about -->
+  <div class="container-fluid secaboutbg">
+    <div class="container about-content">
+      <div class="row align-items-center">
+
+        <div class="col-lg-4">
+          <span class="abou-subtitle" style="color:#FFEB3D; font-weight:bold;">[ ABOUT US ]</span>
+          <h1 class="text-white mt-3 mb-4 sectitleww" style="font-size: 50px;">Restoring Lasting Shine, Inside and Out</h1>
+          <p class="text-white-50">At The Detailing Den, we believe every car deserves premium care...</p>
+          <a href="#" class="btn secbtnabout rounded-pill px-4 py-2 mt-3">READ MORE</a>
+        </div>
+        <div class="col-lg-4">
+          <img src="images/pressure-washer.png" class="img-fluid" alt="Machine">
+        </div>
+        <div class="col-lg-4">
+
+          <div class="mt-5">
+            <div class="feature-box">
+              <h5>Professional & Experienced Team</h5>
+              <p>Skilled Experts Delivering Precision Car Care</p>
+            </div>
+            <div class="feature-box">
+              <h5>Advanced Detailing Techniques</h5>
+              <p>Modern Techniques For Superior Vehicle Protection</p>
+            </div>
+            <div class="feature-box" style="border:none;">
+              <h5>Premium Quality Products</h5>
+              <p>Using High-Quality Premium Detailing Products</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Services -->
+  <div class="container-fluid secserbg ">
+    <div class="container">
+      <div class="col-lg-12 text-center mb-5">
+        <span class="service-subtitle">[ OUR SERVICES ]</span>
+        <h2 class="service-title">Where The Real Magic Happens</h2>
+      </div>
+
+      <div class="owl-carousel services-carousel owl-theme">
+        <div class="item">
+          <div class="row secdultat align-items-center">
+            <div class="col-lg-6 text-white">
+              <h3 class="mb-4 secticar">Car Detailing</h3>
+              <p class="">
+                In Skin Restoration Service, the surface of the vehicle is buffed to get rid of the old and dull layer
+                of the paint to reveal a brand new and shiny layer:
+              </p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>– Skin Restoration</li>
+                <li>– Headlight Restoration</li>
+                <li>– Chrome Restoration</li>
+                <li>– Wheel Restoration</li>
+                <li>– Trim Restoration</li>
+                <li>– Fabric Restoration</li>
+                <li>– Leather Restoration</li>
+              </ul>
+              <a href="#" class="btn secbtnabout ">VIEW DETAIL</a>
+            </div>
+
+            <div class="col-lg-6 position-relative">
+              <h2 class="big-number">01</h2>
+              <div class="image-clip">
+                <img src="images/slider1.png" class="img-fluid" alt="Car Detailing">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row secdultat align-items-center">
+            <div class="col-lg-6 text-white">
+              <h3 class="mb-4">Car Detailing</h3>
+              <p class="text-secondary">
+                In Skin Restoration Service, the surface of the vehicle is buffed to get rid of the old and dull layer
+                of the paint to reveal a brand new and shiny layer:
+              </p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>– Skin Restoration</li>
+                <li>– Headlight Restoration</li>
+                <li>– Chrome Restoration</li>
+                <li>– Wheel Restoration</li>
+                <li>– Trim Restoration</li>
+                <li>– Fabric Restoration</li>
+                <li>– Leather Restoration</li>
+              </ul>
+              <a href="#" class="btn secbtnabout ">VIEW DETAIL</a>
+            </div>
+
+            <div class="col-lg-6 position-relative">
+              <h2 class="big-number">02</h2>
+              <div class="image-clip">
+                <img src="images/slider1.png" class="img-fluid" alt="Car Detailing">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Services stop -->
+
+  <!-- How It Work -->
+  <div class="container-fluid sechowbg ">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-7 sechowcbg">
+          <div class="secmarbg">
+            <div class=" mb-5">
+              <span class="work-subtitle">[ HOW IT WORKS ]</span>
+              <h2 class="work-title">Auto Wash Process in Three Steps</h2>
+            </div>
+
+
+            <div class="process-item">
+              <div class="icon-box"><i class="bi bi-search"></i></div>
+              <h4 class="secintrextbg">Inspection</h4>
+              <p>We carefully inspect your vehicle to understand its condition and detailing requirements.</p>
+            </div>
+            <div class="process-item">
+              <div class="icon-box"><i class="bi bi-car-front"></i></div>
+              <h4 class="secintrextbg">Treatment Selection</h4>
+              <p>Our experts recommend the best detailing and protection solutions for your vehicle.</p>
+            </div>
+            <div class="process-item">
+              <div class="icon-box"><i class="bi bi-tools"></i></div>
+              <h4 class="secintrextbg">Professional Detailing</h4>
+              <p>Using premium products and advanced techniques, we perform the service with precision and care.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 white-card">
+          <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <span class="badge-custom"><i class="bi bi-check-circle-fill text-warning me-1"></i> 800+ All Over
+              Wash</span>
+            <span class="badge-custom"><i class="bi bi-check-circle-fill text-warning me-1"></i> 50+ Visits Per
+              Day</span>
+            <span class="badge-custom"><i class="bi bi-check-circle-fill text-warning me-1"></i> 5+ Wash Stations</span>
+            <span class="badge-custom"><i class="bi bi-check-circle-fill text-warning me-1"></i> 500+ Happy
+              Customer</span>
+            <span class="badge-custom"><i class="bi bi-check-circle-fill text-warning me-1"></i> 50+ Wash
+              Equipment</span>
+          </div>
+
+          <div class="seccarconbgg container">
+            <div id="comparison">
+              <figure>
+                <div id="handle"></div>
+                <div id="divisor"></div>
+              </figure>
+              <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- How It Work stop -->
+
+  <!-- PRECISION WITH STYLE -->
+  <div class="container-fluid secpaadlrlf">
+    <div class=" text-center mb-5">
+      <span class="precision-subtitle">[ PRECISION WITH STYLE ]</span>
+      <h2 class="precision-title">Ceramic Coating</h2>
+    </div>
+
+    <img src="images/preimgbg.png" class="img-fluid" alt="Ceramic Coating">
+  </div>
+  <!-- PRECISION WITH STYLE stop -->
+
+  <!-- You Like It Clean? We Love Making It Shine! -->
+  <div class="container-fluid seclikbg py-5">
+    <div class="text-center mb-5">
+      <p class="mb-2 text-muted">At The Detailing Den, perfection isn’t just a goal — it’s our standard. From deep
+        interior cleaning to flawless exterior finishes, we treat every vehicle with <br>unmatched precision and care.
+        Experience premium detailing services designed to restore, protect, and elevate your ride.</p>
+
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-4">
+        <div class="feature-card left">
+          <div class="card-text">
+            <h5>Commitment</h5>
+            <p>At The Detailing Den, we believe premium car care should be accessible, affordable, and powered by
+              advanced detailing solutions.</p>
+          </div>
+          <div class="card-icon"><i class="bi bi-handshake"></i></div>
+        </div>
+        <div class="feature-card left">
+          <div class="card-text">
+            <h5>Quality</h5>
+            <p>We provide high-end detailing services without ever compromising on quality, precision, or customer
+              satisfaction.</p>
+          </div>
+          <div class="card-icon"><i class="bi bi-shield-check"></i></div>
+        </div>
+        <div class="feature-card left">
+          <div class="card-text">
+            <h5>Trust</h5>
+            <p>Trusted by car enthusiasts and vehicle owners, The Detailing Den is known for reliability,
+              transparency, and outstanding results.</p>
+          </div>
+          <div class="card-icon"><i class="bi bi-emoji-smile"></i></div>
+        </div>
+        <div class="feature-card left">
+          <div class="card-text">
+            <h5>Services</h5>
+            <p>Our customer-focused approach and premium detailing expertise make us stand out in the world of car
+              care.</p>
+          </div>
+          <div class="card-icon"><i class="bi bi-car-front"></i></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 text-center">
+        <h2 class="fw-bold">You Like It <span class="sectextclae">Clean? <br></span> We Love Making It <span
+            class="sectextclae">Shine!</span></h2>
+        <img src="images/your-car-image.png" class="img-fluid" alt="Mercedes CLA">
+      </div>
+
+      <div class="col-lg-4">
+        <div class="feature-card right">
+          <div class="card-icon"><i class="bi bi-tools"></i></div>
+          <div class="card-text">
+            <h5>Equipment</h5>
+            <p>We use professional-grade tools and advanced equipment that meet the highest industry standards.</p>
+          </div>
+        </div>
+        <div class="feature-card right">
+          <div class="card-icon"><i class="bi bi-people"></i></div>
+          <div class="card-text">
+            <h5>The Team</h5>
+            <p>Our experienced detailing specialists are professionally trained to deliver exceptional care and
+              perfection.</p>
+          </div>
+        </div>
+        <div class="feature-card right">
+          <div class="card-icon"><i class="bi bi-globe"></i></div>
+          <div class="card-text">
+            <h5>Sustainability</h5>
+            <p>We use eco-conscious products and responsible detailing practices to keep both your vehicle and the
+              environment protected.</p>
+          </div>
+        </div>
+        <div class="feature-card right">
+          <div class="card-icon"><i class="bi bi-credit-card"></i></div>
+          <div class="card-text">
+            <h5>Membership Cards</h5>
+            <p>Our exclusive value card programs are designed to give car lovers premium benefits and unbeatable
+              detailing experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- you like it clean? we love making it shine! Stop -->
+
+  <!-- Washing Price -->
+  <section class="container-fluid secwashbg ">
+    <div class="container text-center">
+      <p class="wash-title">[ Washing Price ]</p>
+      <h2 class="wash-title2">Choose Your Plan</h2>
+
+      <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#small-car" type="button">
+            <img src="images/Small-Car-img.png" width="80" alt="Small Car"><br>Small Car
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#big-car" type="button">
+            <img src="images/Big-Car-img.png" width="80" alt="Big Car"><br>Big Car
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#big-vehicles" type="button">
+            <img src="images/Big-Vehicles-img.png" width="80" alt="Big Vehicles"><br>Big Vehicles
+          </button>
+        </li>
+      </ul>
+
+
+      <div class="tab-content">
+        <!-- 1 -->
+        <div class="tab-pane fade show active" id="small-car">
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6">
+              <div class="card pricing-card h-100">
+                <div class="time-tag">🕒 15 MIN</div>
+                <h3>Standard Wash</h3>
+                <div class="price">₹599</div>
+                <ul class="features">
+                  <li>Interior Detailing</li>
+                  <li>Glass Polishing</li>
+                  <li>Drive-Thru Wash</li>
+                  <li>Wheel Cleaning</li>
+                  <li>Hand Car Wash</li>
+                </ul>
+                <button class="order-btn">ORDER NOW ↗</button>
+
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card pricing-card h-100">
+                <div class="time-tag">🕒 30 MIN</div>
+                <h3>Budget Friendly</h3>
+                <div class="price">₹999</div>
+                <ul class="features">
+                  <li>Glass Polishing</li>
+                  <li>Wheel Cleaning</li>
+                  <li>Hand Car Wash</li>
+                  <li>Drive-Thru Wash</li>
+                  <li>Interior Detailing</li>
+                </ul>
+                <button class="order-btn">ORDER NOW ↗</button>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card pricing-card h-100">
+                <div class="time-tag">🕒 60 MIN</div>
+                <h3>Shine Wash</h3>
+                <div class="price">₹1999</div>
+                <ul class="features">
+                  <li>Hand Car Wash</li>
+                  <li>Drive-Thru Wash</li>
+                  <li>Wheel Cleaning</li>
+                  <li>Interior Detailing</li>
+                  <li>Glass Polishing</li>
+                </ul>
+                <button class="order-btn">ORDER NOW ↗</button>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card pricing-card h-100">
+                <div class="time-tag">🕒 90 MIN</div>
+                <h3>Ultimate Shine</h3>
+                <div class="price">₹2999</div>
+                <ul class="features">
+                  <li>Drive-Thru Wash</li>
+                  <li>Interior Detailing</li>
+                  <li>Wheel Cleaning</li>
+                  <li>Glass Polishing</li>
+                  <li>Hand Car Wash</li>
+                </ul>
+                <button class="order-btn">ORDER NOW ↗</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="tab-pane fade show " id="big-car">
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6">
+              <div class="card pricing-card h-100">
+                <div class="time-tag">🕒 15 MIN</div>
+                <h3>Standard Wash</h3>
+                <div class="price">₹599</div>
+                <ul class="features">
+                  <li>Interior Detailing</li>
+                  <li>Glass Polishing</li>
+                  <li>Drive-Thru Wash</li>
+                  <li>Wheel Cleaning</li>
+                  <li>Hand Car Wash</li>
+                </ul>
+                <button class="order-btn">ORDER NOW ↗</button>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="tab-pane fade show " id="big-vehicles">
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6">
+              <div class="card pricing-card h-100">
+                <div class="time-tag">🕒 15 MIN</div>
+                <h3>Standard Wash</h3>
+                <div class="price">₹599</div>
+                <ul class="features">
+                  <li>Interior Detailing</li>
+                  <li>Glass Polishing</li>
+                  <li>Drive-Thru Wash</li>
+                  <li>Wheel Cleaning</li>
+                  <li>Hand Car Wash</li>
+                </ul>
+                <button class="order-btn">ORDER NOW ↗</button>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Washing Price stop -->
+
+  <!-- testimonials  -->
+  <div class="container-fluid sectestimonibg ">
+    <div class="secbgtest">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="sectebrgmain">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <h6>"Absolutely amazing work! My car looks brand new."</h6>
+                <p>My car looks brand new after the detailing service. The shine and finish are incredible.</p>
+                <div class="user-info">
+                  <img src="images/rohan.png" alt="Rohan">
+                  <span>Rohan <b>CAR OWNER</b></span>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <h6>"Absolutely amazing work! My car looks brand new."</h6>
+                <p>My car looks brand new after the detailing service. The shine and finish are incredible.</p>
+                <div class="user-info">
+                  <img src="images/rohan.png" alt="Rohan">
+                  <span>Rohan <b>CAR OWNER</b></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 secusbgg">
+          <div class="rating-wrapper">
+            <div class="rating-number">5.0</div>
+            <div class="rating-divider"></div>
+            <div class="rating-content">
+              <div class="stars">★★★★★</div>
+              <div class="trust-text">1000+ PEOPLE TRUSTING US!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- testimonials stop -->
+
+  <!-- blog and news -->
+  <div class="container-fluid secblogbg ">
+    <div class="container">
+      <div class=" text-center mb-5">
+        <span class="wash-title">[ BLOG & NEWS ]</span>
+        <h2 class="wash-title2">Latest Updates & Car Care Tips</h2>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="blog-card" style="background-image: url('../images/blog1.png');">
+            <div class="tag">GENERAL</div>
+            <div class="card-content">
+              <h3>Tips for avoiding scratches and marks</h3>
+              <a href="#" class="custom-order-btn">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blog-card" style="background-image: url('../images/blog2.png');">
+            <div class="tag">Auto Detailing</div>
+            <div class="card-content">
+              <h3>What to look for in a
+                reputable car wash</h3>
+              <a href="#" class="custom-order-btn">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blog-card" style="background-image: url('../images/blog3.png');">
+            <div class="tag">Interior Polish</div>
+            <div class="card-content">
+              <h3>Interior detailing tips
+                vacuuming, cleaning</h3>
+              <a href="#" class="custom-order-btn">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- blog and news stop -->
+
+
+  <!-- Want your car to shine like new again? -->
+  <div class="container-fluid secshinebg ">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="shine-title">Want your car to shine like new again?</h2>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="btn secshinebtn">Book Appointment</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- Want your car to shine like new again? stop -->
+
+  <!--car-img -->
+  <div class="container-fluid p-0">
+    <img class="img-fluid" src="images/car-img.png" alt="">
+  </div>
+  <!-- car-img stop -->
+
+  <!-- Everything You Need to Know -->
+  <div class="container-fluid sececerbg">
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-md-5">
+          <div class="sectextherd22">
+            <p>Everything You Need to Know</p>
+            <h3>Frequently Asked <br>
+              Questions</h3>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="accordion custom-accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  What is car detailing?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Car detailing is a deep cleaning and restoration process for your vehicle. It involves both interior
+                  and exterior treatment to remove dirt, stains, scratches, and oxidation.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  How often should I get my car detailed?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  It is generally recommended to get your car detailed every 4 to 6 months to maintain its condition and
+                  resale value.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">
+                  What's the difference between a car wash and car detailing?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  A car wash is a basic exterior cleaning, whereas car detailing is a thorough, detailed process that
+                  addresses both interior and exterior rejuvenation.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour">
+                  Do you use safe and eco-friendly products?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we prioritize the use of high-quality, eco-friendly, and safe products that are gentle on your
+                  vehicle and the environment.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive">
+                  How long does a detailing session take?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Depending on the package, a detailing session typically takes anywhere from 3 to 6 hours.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Everything You Need to Know  stop -->
+
+  <!-- Our Instagram -->
+  <div class="container-fluid secinsabg">
+    <div class="sectextherd23">
+      <p>Our Instagram</p>
+      <h3>@the_detailingden</h3>
+    </div>
+
+    <div class="owl-carousel secinstagram owl-theme mt-4">
+
+      <div class="gallery-item">
+        <a href="https://www.instagram.com/the_detailingden/" target="_blank">
+          <img src="images/instaimg1.png" />
+          <i class="insta-icon fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://www.instagram.com/the_detailingden/" target="_blank">
+          <img src="images/instaimg2.png" />
+          <i class="insta-icon fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://www.instagram.com/the_detailingden/" target="_blank">
+          <img src="images/instaimg3.png" />
+          <i class="insta-icon fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://www.instagram.com/the_detailingden/" target="_blank">
+          <img src="images/instaimg4.png" />
+          <i class="insta-icon fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://www.instagram.com/the_detailingden/" target="_blank">
+          <img src="images/instaimg5.png" />
+          <i class="insta-icon fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://www.instagram.com/the_detailingden/" target="_blank">
+          <img src="images/instaimg6.png" />
+          <i class="insta-icon fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://www.instagram.com/the_detailingden/" target="_blank">
+          <img src="images/instaimg7.png" />
+          <i class="insta-icon fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="https://www.instagram.com/the_detailingden/" target="_blank">
+          <img src="images/instaimg8.png" />
+          <i class="insta-icon fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Our Instagram stop -->
+
+
+
+
+
+  <!-- footer -->
+  <div include-html="footer.html" id="footer-file"></div>
+
+  <script src="https://unpkg.com/beer-slider/dist/BeerSlider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/settings.js"></script>
+  <script>
+
+    $('.owl-carousel.secinstagram').owlCarousel({
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+
+      responsive: {
+        0: { items: 2 },
+        576: { items: 3 },
+        768: { items: 4 },
+        992: { items: 6 }
+      }
+    });
+
+    $(document).ready(function () {
+      var owl = $('.testimonial-carousel');
+      owl.owlCarousel({
+        loop: true,
+        items: 1,
+        nav: false, // Default nav hide
+        dots: false
+      });
+
+    });
+
+
+
+    var divisor = document.getElementById("divisor"),
+      handle = document.getElementById("handle"),
+      slider = document.getElementById("slider");
+
+    function moveDivisor() {
+      handle.style.left = slider.value + "%";
+      divisor.style.width = slider.value + "%";
+    }
+
+    window.onload = function () {
+      moveDivisor();
+    };
+  </script>
+  <script>
+    $('.services-carousel').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      dots: false,
+      items: 1,
+      navText: ["<i class='bi bi-arrow-left'></i>", "<i class='bi bi-arrow-right'></i>"]
+    });
+
+    document.addEventListener("click", function (e) {
+      // Check karo ki click karne wali cheez searchTrigger hai
+      if (e.target.closest('#searchTrigger')) {
+        const input = document.getElementById('navSearch');
+        if (input) {
+          input.classList.toggle('active');
+          if (input.classList.contains('active')) {
+            input.focus();
+          }
+        }
+      }
+    });
+
+
+  </script>
+  <script>
+
+    // loder-start
+    window.addEventListener("load", function () {
+      document.getElementById("pageloader").style.display = "none";
+    });
+    // loder-end
+
+  </script>
+
+
+
+
+</body>
+
+</html>

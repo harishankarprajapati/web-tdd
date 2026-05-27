@@ -1,0 +1,1826 @@
+body {
+  font-family: 'Readex Pro';
+}
+
+html {
+  scrollbar-width: thin;
+  /* thin */
+  scrollbar-color: #FFEB3D transparent;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 1px !important;
+}
+.top-bar{
+  background-color: #FFEB3D;
+  padding: 5px;
+}
+/* Background */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scroll thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #FFEB3D;
+  border-radius: 10px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8842a;
+}
+
+
+.sec-mobilelogo {
+  display: none;
+}
+
+/* ===== FORCE STICKY ON ALL DEVICES ===== */
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
+/* default */
+/* #header-file {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background: #fff;
+} */
+
+
+
+
+/* <!--scroll progress bar --> */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.progress-container {
+  background-color: #fff;
+  height: 5px;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 5px;
+  width: 0%;
+  border-radius: 10px;
+  background: linear-gradient(90deg,
+      #D1CDCB 0%,
+      #161616 18%,
+      #8b6a1f 50%,
+      #e6c96a 100%);
+}
+
+
+/* <!--scroll progress bar END --> */
+
+
+.secpadlrlf {
+  padding: 0px 45px;
+}
+
+
+.social-icons a {
+  color: #000;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+/* Container jo boxes ko right side par rakhega */
+.right-skewed-group {
+  display: flex;
+  gap: 15px;
+  height: 100%;
+}
+
+/* Existing structure - preserved as you asked */
+.phone-box {
+  background-color: #212529;
+  color: #fff;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0% 0%, 85% 10%, 100% 100%, 10% 100%);
+  /* Animation add ki hai */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.franchise-box {
+  background-color: #212529;
+  color: #fff;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0% 0%, 85% 10%, 100% 100%, 10% 100%);
+  /* Animation add ki hai */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: Background wahi rahega, bas thoda sa "lift" hoga */
+.phone-box:hover,
+.franchise-box:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* top bar stop */
+
+
+
+/* Menu start*/
+.nav-wrap {
+  background: linear-gradient(to bottom, #00000081, #00000081);
+}
+
+.secmaiherbg {
+  background-image: url(../images/maihederbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 815px;
+  padding: 0;
+}
+
+.nav-logo {
+  height: 151px;
+  margin-top: -45px;
+  margin-bottom: -48px;
+}
+
+.nav-link-custom {
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 0 20px !important;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Smooth bouncy effect */
+  display: inline-block;
+  font-family: 'Bai Jamjuree';
+}
+
+.nav-link-custom:hover {
+  color: #FFEB3D !important;
+  transform: translateY(-5px);
+  text-shadow: 0 5px 10px rgba(182, 138, 44, 0.3);
+}
+
+/* 3. "HOME" Button (Yellow background wala) - Is par hover animation thoda alag rakhte hain */
+.nav-link-custom {
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+
+.nav-link-custom:hover {
+  background-color: #FFEB3D;
+  color: #000 !important;
+  transform: scale(1.05);
+}
+
+.secmaiherbg {
+  position: relative;
+  height: 815px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.secmaiherbg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.nav-search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-icon {
+  background: #FFEB3D;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  /* Icon hamesha upar rahe */
+}
+
+.search-input {
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 40px;
+  padding: 0;
+  border: 2px solid #FFEB3D;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  padding-left: 20px;
+}
+
+/* Active class jab JS add karegi */
+.search-input.active {
+  width: 250px;
+  opacity: 1;
+  padding-right: 20px;
+}
+
+.search-input.active {
+  width: 200px;
+  opacity: 1;
+}
+
+.btn-book-service {
+  background-color: #FFEB3D;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-block;
+}
+
+.btn-book-service:hover {
+  background-color: #FFEB3D;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 206, 0, 0.4);
+}
+
+.btn-book-service:active {
+  transform: scale(0.98);
+}
+
+/* Menu stop*/
+
+
+
+/* about */
+
+.secaboutbg {
+  position: relative;
+  background-color: #000;
+  padding: 100px 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.secaboutbg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #FFEB3D;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+}
+
+.feature-box {
+  color: #000;
+  padding: 30px 0;
+  border-bottom: 2px solid #000;
+}
+
+.secbtnabout {
+  position: relative;
+  background-color: #FFEB3D;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid #FFEB3D;
+  z-index: 1;
+}
+
+.secbtnabout:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 206, 0, 0.3);
+}
+
+.btn-book-service:active {
+  transform: scale(0.95);
+}
+
+
+/* about stop */
+
+
+/* Our Services */
+.secserbg {
+  padding: 100px 0;
+  background: #000;
+}
+
+.big-number {
+  font-size: 205px;
+  color: #2a2a2a;
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  z-index: 0;
+  font-weight: 900;
+  pointer-events: none;
+}
+
+.service-subtitle {
+  display: block;
+  color: #FFEB3D;
+  font-family: 'Bai Jamjuree';
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  color: #ffffff;
+  font-family: 'Bai Jamjuree';
+  font-size: 45px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.secticar {
+  font-family: 'Bai Jamjuree';
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.image-clip {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.owl-nav button {
+  background: #fff !important;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #000 !important;
+  font-size: 20px !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.owl-nav button:hover {
+  background: #FFEB3D !important;
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(255, 235, 61, 0.6);
+  cursor: pointer;
+}
+
+/* Our Services stop */
+
+
+/* How It Work */
+
+.sechowbg {
+  padding-bottom: 100px;
+  background: #000;
+}
+
+.sechowcbg {
+  background-image: url(../images/howitworkbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px;
+}
+
+/* Subtitle & Title */
+.work-subtitle {
+  color: #FFEB3D;
+  font-family: 'Bai Jamjuree';
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.secmarbg {
+  padding-left: 255px;
+  padding-right: 20px;
+}
+
+.work-title {
+  color: #fff;
+  font-family: 'Bai Jamjuree';
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.secintrextbg {
+  color: #fff;
+  font-family: 'Bai Jamjuree';
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* Process Items */
+.process-item {
+  color: #fff;
+  margin-bottom: 30px;
+  padding-left: 60px;
+  position: relative;
+}
+
+.icon-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45px;
+  height: 45px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffce00;
+}
+
+.white-card {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.badge-custom {
+  background: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.compare-image {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+  border: 5px solid #fff;
+}
+
+.beer-slider {
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: col-resize;
+}
+
+.seccarconbgg {
+  max-width: 800px;
+}
+
+#comparison {
+  width: 505px;
+  padding-bottom: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-left: -29px;
+}
+
+figure {
+  position: absolute;
+  background-image: url(../images/after-img.png);
+  background-size: cover;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#divisor {
+  background-image: url(../images/before-img.png);
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  height: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    width: 4px;
+    height: calc(50% - 25px);
+    background: white;
+    z-index: 3;
+  }
+
+  &::before {
+    top: 0;
+    box-shadow: 0 -3px 8px 1px rgba(0, 0, 0, .3);
+  }
+
+  &::after {
+    bottom: 0;
+    box-shadow: 0 3px 8px 1px rgba(0, 0, 0, .3);
+  }
+}
+
+#handle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+  }
+
+  &::before {
+    border-right: 6px solid white;
+    left: 50%;
+    margin-left: -17px;
+  }
+
+  &::after {
+    border-left: 6px solid white;
+    right: 50%;
+    margin-right: -17px;
+  }
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  width: calc(100% + 50px);
+  z-index: 2;
+
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 4px solid white;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .3);
+}
+
+input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  height: 15px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  outline: none;
+}
+
+/* How It Work stop */
+
+/* PRECISION WITH STYLE */
+.secpaadlrlf {
+  background: #FFEB3D;
+  padding: 100px 45px;
+}
+
+.precision-subtitle {
+  display: block;
+  color: #000;
+  font-family: 'Bai Jamjuree';
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.precision-title {
+  color: #000;
+  font-family: 'Bai Jamjuree';
+  font-size: 45px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* PRECISION WITH STYLE */
+
+
+/* You Like It Clean? We Love Making It Shine! */
+.seclikbg {
+  background: #fff;
+  background-image: url(../images/sadoimgbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 45px;
+}
+
+.feature-card.left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2b2b2b;
+  /* Dark Grey */
+  color: #ffffff;
+  padding: 20px 30px 20px 20px;
+  margin-bottom: 25px;
+  text-align: right;
+  /* Arrow Shape Path */
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 50%);
+  border-radius: 70px 0 0 70px;
+}
+
+.feature-card.left .card-text {
+  text-align: left;
+  margin-right: 20px;
+  width: 80%;
+  padding-left: 20px;
+}
+
+.feature-card.left h5 {
+  font-family: 'Bai Jamjuree';
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.feature-card.left p {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.feature-card.left .card-icon {
+  background-color: #FFEB3D;
+  /* Yellow */
+  color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.feature-card.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  padding: 20px 20px 20px 40px;
+  margin-bottom: 25px;
+  text-align: left;
+  /* Arrow Shape: Left se arrow shuru hoga */
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+  border-radius: 0px 70px 70px 0px;
+}
+
+.feature-card.right .card-text {
+  margin-left: 15px;
+  width: 80%;
+}
+
+.feature-card.right .card-text h5 {
+  font-family: 'Bai Jamjuree';
+  margin-bottom: 5px;
+  font-weight: 700;
+  margin-left: 15px;
+  width: 80%;
+}
+
+.feature-card.right .card-text p {
+  font-size: 0.85rem;
+}
+
+/* Base Transition for smoothness */
+.feature-card {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect for Left Cards */
+.feature-card.left:hover {
+  transform: translateX(-10px);
+  background-color: #333;
+  box-shadow: -5px 5px 15px rgba(255, 204, 0, 0.2);
+}
+
+/* Hover Effect for Right Cards */
+.feature-card.right:hover {
+  transform: translateX(10px);
+  background-color: #333;
+  box-shadow: 5px 5px 15px rgba(255, 204, 0, 0.2);
+}
+
+/* Icon hover animation inside cards */
+.feature-card:hover .card-icon {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.sectextclae {
+  color: #FFEB3D;
+}
+
+.feature-card.right .card-icon {
+  background-color: #FFEB3D;
+  color: #000;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+/* You Like It Clean? We Love Making It Shine! stop */
+
+
+/* Washing Price */
+.secwashbg {
+  background: #000;
+  background-image: url(../images/washpricebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 100px 45px;
+}
+
+.nav-pills .nav-link {
+  color: white;
+  background: transparent;
+}
+
+.wash-title {
+  color: #FFEB3D;
+  font-family: 'Bai Jamjuree';
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.wash-title2 {
+  color: #fff;
+  font-family: 'Bai Jamjuree';
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.nav-pills .nav-link.active {
+  background: transparent !important;
+  color: #FFEB3D;
+  font-weight: bold;
+}
+
+.pricing-card {
+  background: #fff;
+  padding: 30px 30px 0px 30px;
+  border-radius: 20px;
+  transition: 0.3s;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+}
+
+.btn-warning {
+  background: #ffc107;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.time-tag {
+  background: #ffde00;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features li {
+  margin: 10px 0;
+  color: #555;
+}
+
+.features li::before {
+  content: "✓ ";
+  color: #ffde00;
+  font-weight: bold;
+}
+
+.order-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  background: #f0f0f0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #ffde00;
+  transition: 0.3s;
+}
+
+.order-btn:hover::before {
+  background: radial-gradient(circle at 0 0, transparent 20px, #ffde00 20px);
+}
+
+.order-btn:hover::after {
+  background: radial-gradient(circle at 20px 0, transparent 20px, #ffde00 20px);
+}
+
+.pricing-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.order-btn {
+  background-color: #f2f2f2;
+  color: #000;
+  border: none;
+  padding: 18px 0;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.order-btn::before,
+.order-btn::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+.order-btn::before {
+  left: -19px;
+  background: radial-gradient(circle at 0 0, transparent 20px, #f2f2f2 20px);
+}
+
+.order-btn::after {
+  right: -18px;
+  background: radial-gradient(circle at 20px 0, transparent 20px, #f2f2f2 20px);
+}
+
+/* Washing Price stop */
+
+
+
+/* testimonials */
+
+.sectestimonibg {
+  background: #000;
+  padding: 60px 40px;
+}
+
+.secbgtest {
+  background-image: url(../images/testimonibg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  border-radius: 40px;
+}
+
+.sectebrgmain {
+  background: #19191B;
+  border-radius: 40px;
+  padding: 50px 50px 3px 50px;
+  margin-top: 404px;
+}
+
+.stars {
+  color: #FFCA00;
+  font-size: 30px;
+}
+
+.testimonial-card h6 {
+  color: #fff;
+  font-family: 'Sarabun';
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.testimonial-card p {
+  color: #fff;
+  font-family: 'Sarabun';
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.testimonial-card img {
+  width: 50px !important;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.testimonial-carousel .owl-nav {
+  position: relative;
+}
+
+.testimonial-carousel .owl-nav::after {
+  content: " ";
+  background-color: #e1e1e1;
+  width: 145px;
+  height: 65px;
+  left: 253px;
+  position: absolute;
+  top: -17px;
+  z-index: -1;
+  border-radius: 20px 20px 0 0;
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 20px;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.rating-number {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.rating-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #555;
+  /* Divider color */
+}
+
+.stars {
+  color: #ffc107;
+  /* Star color */
+  font-size: 20px;
+}
+
+.trust-text {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.secusbgg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* testimonials stop */
+
+
+
+/* blog and news */
+.secblogbg {
+  background: #000;
+  padding: 100px 45px;
+}
+
+.blog-card {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 20px 0px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* Tag style */
+.tag {
+  background: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  width: fit-content;
+  font-weight: bold;
+  position: absolute;
+  text-transform: uppercase;
+  top: 20px;
+  left: 22px;
+}
+
+/* Card Bottom Content */
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+}
+
+.custom-order-btn {
+  background-color: #f2f2f2;
+  color: #000;
+  font-weight: 700;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 50px 0 0 0;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+/* Hover Effect */
+.custom-order-btn:hover {
+  background-color: #ffde00;
+  /* Yellow hover */
+}
+
+/* Inverse Curves Logic using the new class */
+.custom-order-btn::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.custom-order-btn::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+
+.custom-order-btn::before {
+
+  top: 49px;
+  left: -20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 0 5px #f2f2f2;
+}
+
+
+.custom-order-btn::after {
+  right: 2px;
+  border-bottom-left-radius: 20px;
+  transform: rotate(-89deg);
+  box-shadow: -6px 5px 0 4px #f2f2f2;
+}
+
+.custom-order-btn:hover::before {
+  box-shadow: 5px 5px 0 5px #ffde00;
+}
+
+.custom-order-btn:hover::after {
+  box-shadow: -6px 5px 0 4px #ffde00;
+}
+
+.custom-order-btn i {
+  font-size: 20px;
+  font-style: normal;
+  display: block;
+  background: #e1e1e1;
+  border-radius: 50px;
+  padding: 10px 14px;
+}
+
+.card-content h3 {
+  font-family: 'Bai Jamjuree';
+  padding-left: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* blog and news stop */
+
+/*  Want your car to shine like new again? */
+.secshinebg {
+  background: #FFEB3D;
+  padding: 70px 45px;
+}
+
+.shine-title {
+  color: #000;
+  font-family: 'Bai Jamjuree';
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.secshinebtn {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.secshinebtn:hover {
+  background-color: #333;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.secshinebtn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: rotate(30deg);
+  transition: all 0.6s ease;
+}
+
+.secshinebtn:hover::after {
+  left: 120%;
+}
+
+/*  Want your car to shine like new again? stop */
+
+
+/* Everything You Need to Know   */
+.sececerbg {
+  background: #000;
+  padding: 60px 10px;
+}
+
+.sectextherd22 p {
+  position: relative;
+  font-family: 'Oxanium';
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.sectextherd22 p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 170px;
+  height: 2px;
+  background: #FFEB3D;
+}
+
+.sectextherd22 p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 170px;
+  height: 2px;
+  background: #FFEB3D;
+}
+
+.sectextherd22 h3 {
+  font-family: 'Oxanium';
+  color: #fff;
+  font-size: 34px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding: 18px 0;
+  cursor: pointer;
+}
+.custom-accordion .accordion-item {
+  background-color: #000; /* Dark bg */
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.custom-accordion .accordion-button {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  padding: 20px 0;
+  box-shadow: none !important;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  color: #fff;
+}
+
+.custom-accordion .accordion-body {
+  color: #aaa;
+  padding: 0 0 20px 0;
+}
+
+.custom-accordion .accordion-button::after {
+  filter: invert(1); 
+}
+
+/* Everything You Need to Know  stop */
+
+
+/*  Our Instagram  */
+.secinsabg {
+  padding: 60px 10px 10px 10px;
+  background-color: #222222;
+}
+
+.sectextherd23 {
+  text-align: center;
+}
+
+.sectextherd23 p {
+  position: relative;
+  font-family: 'Oxanium';
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 10px;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.sectextherd23 p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 110px;
+  height: 2px;
+  background: #FFEB3D;
+}
+
+.sectextherd23 p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 110px;
+  height: 2px;
+  background: #FFEB3D;
+}
+.seciconfoot{
+  color: #FFEB3D;
+}
+.sectextherd23 h3 {
+  font-family: 'Oxanium';
+  color: #fff;
+  font-size: 48px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item .insta-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 36px;
+  color: white;
+  transition: 0.3s;
+}
+
+.gallery-item:hover .insta-icon {
+  opacity: 1;
+}
+
+.secinstagram .owl-nav {
+  display: none;
+}
+
+.secinstagram .owl-dots {
+  display: none;
+}
+/*  Our Instagram stop */
+
+/* footer */
+.footerbg{
+  background-image: url(../images/washpricebg.png);
+   padding: 60px 10px;
+
+}
+.secjintext {
+    font-family: 'Manrope';
+    font-size: 14px;
+    color: #ffffff94;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.secsocalmes {
+    display: flex;
+}
+.secsocalmes p {
+    padding-right: 10px;
+    margin: 0;
+}
+.secsocalmes p a {
+    color: #FFF;
+    padding: 8px 12px;
+    font-size: 18px;
+    background-color: #ffec3d67;
+}
+.secsocalmes p a:hover {
+    background: #FFEB3D;
+    color: #000;
+}
+.secfottextlin p{
+  margin: 0;
+  padding-bottom: 5px;
+}
+.sechesfoottext {
+    font-family: 'Oxanium';
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.secfottextlin {
+    padding-top: 20px;
+}
+.secfottextlin p a {
+    text-decoration: none;
+    font-family: 'Manrope';
+    font-size: 16px;
+    color: #ffffff94 !important;
+}
+.footer-branches {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+.footer-branches .ft-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+        font-family: 'Manrope';
+}
+
+.footer-branches p {
+    margin: 0 0 6px;
+}
+
+.footer-branches {
+    color: #ffffff94 !important;
+    font-size:16px ;
+    font-family: 'Manrope';
+}
+.footer-branches strong {
+    color: #ffffffcc;
+    font-weight: 600;
+}
+.footerbg2{
+  background-color: #222222;
+  padding-top: 10px;
+}
+.aectem2{
+  font-family: 'Manrope';
+  color: #ffffffcc;
+}
+.aectem3{
+text-align: end;
+}
+.aectem3 a{
+  font-family: 'Manrope';
+  color: #ffffffcc;
+  text-decoration: none;
+}
+.aectem3 a:hover{
+  color: #FFEB3D;
+}
+.secfottextlin p a:hover{
+    color: #FFEB3D !important;
+}
+.heaname h2{
+  font-family: 'Bai Jamjuree';
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 50px 0px;
+}
+/* footer stop */
+
+/* about page */
+.secallinnerpabg{
+  background-image: url(../images/inner-pagebg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 0px; 
+  height: 400px;
+}
+
+.sechonaboutbg {
+    background: #222222;
+    padding: 60px 10px;
+}
+.secabbgimg img {
+    border-radius: 10px;
+}
+.secabbgimg2 {
+    padding-top: 50px;
+}
+.sectextherd2 p {
+    position: relative;
+    font-family: 'Oxanium';
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 10px;
+    display: inline-block;
+    padding: 10px 0;
+}
+.sectextherd2 p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 70px;
+    height: 2px;
+    background: #FFEB3D;
+}
+.sectextherd2 p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 70px;
+    height: 2px;
+    background: #FFEB3D;
+}
+.sectextherd2  {
+    font-family: 'Bai Jamjuree';
+    color: #fff;
+    font-size: 48px;
+}
+.sectextherd2 h6 {
+    font-family: 'Manrope';
+    color: #afafaf;
+    font-weight: 400 !important;
+}
+
+.secvisbgg {
+  background-color: #000;
+    padding: 60px 10px;
+}
+
+.vm-title {
+    font-family: 'Oxanium';
+    font-size: 38px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.vm-text {
+    font-size: 17px;
+    font-family: 'Manrope';
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+.mission-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #d1d1d1;
+}
+.mission-number {
+    background: #FFEB3D;
+    width: 65px;
+    height: 38px;
+    border-radius: 50%;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+.mission-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.secabbgimg2 img {
+    border-radius: 10px;
+}
+.secalltitlebg h2{
+  font-family: 'bai Jamjuree';
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 100px;
+}
+/* about page stop */
+
+
+/* Blog-details */
+.detail-img {
+    width: 100%;
+    max-width: 555px;
+    margin-top: -138px !important;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    position: relative;
+}
+.blog-detail{
+  background: #000;
+  padding: 60px 10px;
+}
+.blog-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+.blog-content p, .blog-content li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ddd;
+}
+.blog-content h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+/* Blog-details stop */
+
+
+/* Contact us */
+.seccontabbg{
+  background: #000;
+  padding: 60px 10px;
+}
+.sec-cont-hh {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+.sec-cont-pp {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.form-group label {
+    color: #fff;
+}
+.custom-btn {
+    font-family: 'Bai Jamjuree';
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #FFEB3D;
+    padding: 10px 25px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 1;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+.custom-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+    background-color: #ECCC2D;
+    transition: all 0.4s ease;
+    z-index: -1;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+
+.custom-btn:hover::before {
+    width: 100%;
+}
+
+.custom-btn:hover {
+    color: #000;
+}
+.contbgg {
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 25px;
+}
+.sec-cont-hh2 {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+}
+.seccont-add-h {
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    font-family: 'Manrope';
+    align-items: center;
+    gap: 8px;
+    color: #222;
+}
+.seccont-add-h span i {
+    color: #FFEB3D;
+}
+.form-group {
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+.seccont-add-p a {
+    font-family: 'Manrope';
+    font-size: 15px;
+    color: #000 !important;
+}
+.iconsc span i {
+    color: #FFEB3D;
+    font-size: 16px;
+}
+/* Contact us stop */
+
+/* terms and conditions */
+.secteambg{
+  background: #000;
+  padding: 60px 10px;
+}
+.policy-content h4, .policy-content h5 {
+    color: #ffffff;
+    font-weight: 600;
+}
+.policy-content p {
+    color: #ffffff;
+}
+
+.policy-content ul li {
+    color: #ffffff;
+}
+
+.list-unstyled li a{
+  color: #fff;
+}
+/* terms and conditions stop */
