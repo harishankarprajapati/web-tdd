@@ -1824,3 +1824,152 @@ text-align: end;
   color: #fff;
 }
 /* terms and conditions stop */
+
+/* ==========================================================================
+   Franchise Section Custom Styles (Black Dark Theme)
+   ========================================================================== */
+
+:root {
+  --primary-color: #ffc107; /* Gold/Yellow highlight black par bahut premium lagti hai. Aap isse change kar sakte hain */
+  --bg-black: #121212;      /* Pure black se thoda soft solid dark background */
+  --card-dark: #1e1e1e;     /* Form card ka background color */
+  --text-white: #ffffff;
+  --text-muted: #b3b3b3;
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+.franchise-section {
+  background-color: var(--bg-black);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-white);
+}
+
+/* Intro Content */
+.franchise-badge {
+  background-color: rgba(255, 193, 7, 0.15);
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+}
+
+.section-heading {
+  font-weight: 700;
+  color: var(--text-white);
+  font-size: 2.2rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.feature-icon i {
+  color: var(--primary-color); /* Icons ab primary color (Gold/Yellow) ke dikhenge */
+  font-size: 1.3rem;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-text {
+  font-weight: 500;
+  color: var(--text-white);
+  font-size: 16px;
+}
+
+/* Form Card Design (Dark Mode) */
+.franchise-form-card {
+  background: var(--card-dark);
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-title {
+  font-weight: 700;
+  color: var(--text-white);
+  position: relative;
+}
+
+.form-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.franchise-form-card .form-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-white);
+  margin-bottom: 6px;
+}
+
+/* Dark Input Fields Styling */
+.franchise-form-card .form-control,
+.franchise-form-card .form-select {
+  background-color: #2a2a2a;
+  color: var(--text-white);
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #3a3a3a;
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+/* Placeholder text color control */
+.franchise-form-card .form-control::placeholder {
+  color: #777777;
+}
+
+/* Dropdown option text fix for dark background */
+.franchise-form-card .form-select option {
+  background-color: var(--card-dark);
+  color: var(--text-white);
+}
+
+.franchise-form-card .form-control:focus,
+.franchise-form-card .form-select:focus {
+  background-color: #2d2d2d;
+  color: var(--text-white);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.2);
+}
+
+/* Submit Button */
+.btn-franchise-submit {
+  background-color: var(--primary-color);
+  color: #121212; /* Dark text on light button */
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.btn-franchise-submit:hover {
+  background-color: #ffca2c;
+  color: #121212;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+/* Responsive Tweak */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.8rem;
+  }
+}
