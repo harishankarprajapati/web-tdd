@@ -7,7 +7,7 @@ const siteData = {
     phonesit2: "",
    
 
-    timeopen: "",
+    timeopen: "9am to 8pm",
     email: "info@thedetailingden.co.in",
 
     // ===== 3 ADDRESSES + LINKS =====

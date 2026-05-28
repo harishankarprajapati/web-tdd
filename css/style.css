@@ -300,6 +300,7 @@ body {
   padding: 100px 0;
   color: #fff;
   overflow: hidden;
+  z-index: 0;
 }
 
 .secaboutbg::after {
@@ -1056,7 +1057,8 @@ input[type=range]::-moz-range-track {
   color: #fff;
   gap: 20px;
   justify-content: flex-end;
-  padding-right: 20px;
+    padding-right: 60px;
+    padding-bottom: 40px;
 }
 
 .rating-number {
@@ -1441,7 +1443,7 @@ input[type=range]::-moz-range-track {
 
 /* footer */
 .footerbg{
-  background-image: url(../images/washpricebg.png);
+  background-image: url(../images/footerbg.png);
    padding: 60px 10px;
 
 }
