@@ -360,6 +360,10 @@ body {
 
 
 /* Our Services */
+.image-clip {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, -22% 100%);
+    overflow: hidden;
+}
 .secserbg {
   padding: 100px 0;
   background: #000;
